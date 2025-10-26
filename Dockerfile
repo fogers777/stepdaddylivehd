@@ -3,7 +3,7 @@ ARG PROXY_CONTENT=TRUE
 ARG SOCKS5
 
 # Only set for local/direct access. When TLS is used, the API_URL is assumed to be the same as the frontend.
-ARG API_URL
+ARG API_URL=http://192.168.77.11:3000
 
 # It uses a reverse proxy to serve the frontend statically and proxy to backend
 # from a single exposed port, expecting TLS termination to be handled at the
